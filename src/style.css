@@ -1,0 +1,233 @@
+:root {
+  --color-dark: #353535;
+  --color-accent: #4a8d8a;
+  --color-light: #f4f4f4;
+  --color-gray: #a8b0b9;
+  --color-deep-blue: #2d5565;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  gap: 5rem;
+  border-radius: 0.5rem;
+}
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+svg {
+  height: 2rem;
+  fill: #5e7a7d;
+}
+input {
+  border: none;
+  font-size: 1.25rem;
+  background-color: inherit;
+  color: var(--color-dark);
+}
+input:focus {
+  outline-width: 0;
+}
+
+.focused {
+  background-color: var(--color-light);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0 0 20px rgba(0, 0, 0, 0.1),
+    0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 5rem;
+  align-items: center;
+	justify-content: center	;
+}
+
+.today {
+  box-sizing: border-box;
+  background-color: var(--color-dark);
+  width: 25rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.condition-container {
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+
+.condition-text {
+  width: 80%;
+  height: 100%;
+  background-color: var(--color-deep-blue);
+}
+.condition-icon {
+  width: auto;
+  height: auto;
+  background-color: var(--color-accent);
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+.location {
+  width: 100%;
+  height: 25%;
+  background-color: var(--color-deep-blue);
+}
+
+.weather-info {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.temp-box {
+  width: 50%;
+  height: 100%;
+  background-color: var(--color-dark);
+}
+
+.extra-info {
+  width: 50%;
+  height: 100%;
+  background-color: #b48b57;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.feels-like,
+.wind-speed,
+.humidity {
+  width: auto;
+  height: inherit;
+}
+
+.later {
+  display: flex;
+  gap: 5rem;
+}
+
+.tomorrow {
+  width: 15rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-dark);
+  border-radius: 0.5rem;
+}
+
+.day-of-week {
+  background-color: var(--color-deep-blue);
+  width: 100%;
+  height: 15%;
+}
+
+.card-info {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-dark);
+}
+
+.card-condition-icon {
+  height: 7rem;
+  width: 7rem;
+  background-color: var(--color-accent);
+}
+
+.card-condition-text {
+  height: 3rem;
+  width: 90%;
+  background-color: var(--color-deep-blue);
+}
+
+.forecast-temp {
+  height: 7rem;
+  width: 7rem;
+  background-color: var(--color-dark);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.day-of-week,
+.card-condition-text,
+.forecast-temp,
+.location,
+.condition-text,
+.temp-box,
+.feels-like,
+.wind-speed,
+.humidity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-light);
+}
+
+.day-of-week {
+  font-size: 1.25rem;
+}
+.card-condition-text {
+  font-size: 1rem;
+}
+.forecast-temp {
+  font-size: 2rem;
+}
+.location {
+  font-size: 1.25rem;
+}
+.condition-text {
+  font-size: 2.5rem;
+}
+.temp-box {
+  font-size: 3rem;
+}
+.feels-like,
+.wind-speed,
+.humidity {
+  font-size: 1rem;
+	font-weight: 700;
+}
